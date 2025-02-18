@@ -89,7 +89,7 @@ const RepositoryCard = () => {
       </div>
       <Link href="/">
         <button className="mt-4 px-4 py-2 bg-green-600 hover:bg-blue-600 text-white rounded">
-          Voltar para Home
+          <Image src={"/home.svg"} alt="home" height={20} width={20} />
         </button>
         </Link>
     </div>
