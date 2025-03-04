@@ -30,7 +30,7 @@ const RepositoryCard = () => {
         setRepos(starredRepos);
 
         // Buscar imagens para cada repositório
-        starredRepos.forEach(async (repo) => {
+        starredRepos.forEach(async (repo: { name: never; id: never; }) => {
           const imageUrl = `https://raw.githubusercontent.com/${GITHUB_USERNAME}/${repo.name}/master/Images/Example.png`;
 
           try {
