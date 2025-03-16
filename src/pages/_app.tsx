@@ -1,12 +1,12 @@
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
-import { Orbitron } from "next/font/google";
+import { Fira_Code } from "next/font/google";
 
-const orbitron = Orbitron({ weight: ["400", "500", "600", "700", "800", "900"], subsets: ["latin"] });
+const firacode = Fira_Code({ weight: ["400", "500", "600", "700"], subsets: ["latin"] });
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <main className={orbitron.className}>
+    <main className={firacode.className}>
       <Component {...pageProps} />
     </main>
   );
